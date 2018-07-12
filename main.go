@@ -23,6 +23,10 @@ func main() {
 
 var indexTemplate = template.Must(template.ParseFiles("template/root.html", "template/index.html", "template/nav.html", "template/contact.html"))
 func indexHandler(w http.ResponseWriter, r *http.Request) {
+  if r.URL.Path != "/" {
+    http.NotFound(w, r)
+    return
+  }
   renderTemplate(w, indexTemplate, nil)
 }
 
