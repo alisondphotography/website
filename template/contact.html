@@ -1,0 +1,15 @@
+{{define "contact"}}
+<div id="contact">
+  <h1>Say Hey!</h1>
+  <p>If you’re fueled by windblown hair and fresh mountain air, then fill out this contact form and I'll send you my cute little guide that contains my availability, pricing, links to more albums, and a little more!</p>
+  <form action="/contact" method="post">
+    <input name="name" type="text" placeholder="Name">
+    <input name="email" type="text" placeholder="Email">
+    <input name="phone" type="text" placeholder="Phone">
+    <input name="when" type="text" placeholder="When">
+    <input name="where" type="text" placeholder="Where">
+    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
+</div>
+{{end}}

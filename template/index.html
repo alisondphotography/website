@@ -1,0 +1,35 @@
+{{define "body"}}
+ {{template "nav" .}}
+<div id="featured">
+  <ul>
+    <li id="weddings">
+      <a href="/weddings">
+        <div class="content">
+          <div class="topic">Wedding Portfolio</div>
+          <h1>Best Days Ever</h1>
+          <button>View Weddings</button>
+        </div>
+      </a>
+    </li>
+    <li id="engagements">
+      <a href="/engagements">
+        <div class="content">
+          <div class="topic">Engagement Portfolio</div>
+          <h1>First Date Vibes</h1>
+          <button>View Engagements</button>
+        </div>
+      </a>
+    </li>
+    <li id="alison">
+      <a href="/about">
+        <div class="content">
+          <div class="topic">Meet Alison</div>
+          <h1>What I'm All About</h1>
+          <button>View</button>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+  {{template "contact" .}}
+{{end}}

@@ -1,0 +1,18 @@
+{{define "body"}}
+<ul>
+  {{range .}}
+  <li>
+    <div>
+      <span>{{.Name}}</span>
+      <span>{{.Date}}</span>
+      <span>{{.Email}}</span>
+      <span>{{.Phone}}</span>
+      <span>{{.Location}}</span>
+    </div>
+    <div>
+    {{.Message}}
+    </div>
+  </li>
+  {{end}}
+</ul>
+{{end}}
