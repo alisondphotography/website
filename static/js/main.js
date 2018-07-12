@@ -1,6 +1,6 @@
 
 for(x = 1; x < 8; x++) {
-  $('body').append('<img class="hidden" src="/static/img/alison-'+x+'.JPG">')
+  $('#index').append('<img class="hidden" src="/static/img/alison-'+x+'.JPG?auto=compress&w=1000&dpr=2">')
 }
 
 let i = 0
@@ -10,10 +10,11 @@ setInterval(function() {
   if(i > 8) {
     i = 1
   }
-  $('#alison').css('background-image', 'url("/static/img/alison-'+i+'.JPG")')
+  $('#alison').css('background-image', 'url("/static/img/alison-'+i+'.JPG?auto=compress&w=1500&dpr=2")')
 }, 1000)
 
 var x = 5
+
 setInterval(function() {
   $src = null
   if(x === 5) {
@@ -24,7 +25,7 @@ setInterval(function() {
     x = 5
   }
 
-  $('#music').attr('src', '/static/img/alison-'+$src+'.JPG')
+  $('#music').attr('src', '/static/img/alison-'+$src+'.JPG?auto=compress&w=768&dpr=2')
 
 }, 1000)
 

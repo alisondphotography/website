@@ -18,7 +18,7 @@ func main() {
   http.HandleFunc("/engagements", engagementHandler)
   http.HandleFunc("/rocket", submissionsHandler)
   http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
-  http.ListenAndServe(":8080", nil)
+  http.ListenAndServe(":80", nil)
 }
 
 var indexTemplate = template.Must(template.ParseFiles("template/root.html", "template/index.html", "template/nav.html", "template/contact.html"))
@@ -88,7 +88,7 @@ type PortfolioPage struct {
 func weddingHandler(w http.ResponseWriter, r *http.Request) {
   page := PortfolioPage{
     weddings(),
-    "/static/img/wedding/",
+    "http://alison-d-photography.imgix.net/img/wedding/",
   }
   renderTemplate(w, portfolioTemplate, page)
 }
@@ -96,7 +96,7 @@ func weddingHandler(w http.ResponseWriter, r *http.Request) {
 func engagementHandler(w http.ResponseWriter, r *http.Request) {
   page := PortfolioPage{
     engagements(),
-    "/static/img/engagement/",
+    "http://alison-d-photography.imgix.net/img/engagement/",
   }
   renderTemplate(w, portfolioTemplate, page)
 }

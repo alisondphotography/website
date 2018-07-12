@@ -166,15 +166,15 @@ nav .bottom a:first-of-type {
 }
 
 #weddings {
-  background: url("/static/img/the-buenos-46.jpg") right bottom;
+  background: url("http://alison-d-photography.imgix.net/img/the-buenos-46.jpg?auto=compress&w=480&dpr=2") right bottom;
 }
 
 #engagements {
-  background: url("/static/img/mike-katie-engagement-41.jpg") center bottom;
+  background: url("http://alison-d-photography.imgix.net/img/mike-katie-engagement-41.jpg?auto=compress&w=480&dpr=2") center bottom;
 }
 
 #alison {
-  background: url("/static/img/alison-2.JPG");
+  background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=480&dpr=2");
   background-position: center;
   background-size: cover;
 }
@@ -211,7 +211,7 @@ button {
 
 #contact {
   padding: 4em 1em 3em;
-  background-image: url(/static/img/left.png), url(/static/img/right.png);
+  background-image: url('http://alison-d-photography.imgix.net/img/left.png?auto=compress&w=250&dpr=2'), url('http://alison-d-photography.imgix.net/img/right.png?auto=compress&w=250&dpr=2');
   background-position: 0 0, top right;
   background-repeat: no-repeat;
   background-size: 150px auto;
@@ -335,7 +335,7 @@ form button {
 #about img {
   display: block;
   width: 100%;
-  max-width: 800px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -463,6 +463,103 @@ form button {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 481px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=768&dpr=2") top center;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=768&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=768&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=1000&dpr=2") top center;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=1000&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=1000&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=1280&dpr=2") top center;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=1280&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=1280&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=1800&dpr=2") center top;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=1800&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=1800&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=2500&dpr=2") center top;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=2500&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=2500&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 2501px) {
+  #weddings {
+    background: url("http://alison-d-photography.imgix.net/img/featured-wedding1.jpg?auto=compress&w=3000&dpr=2") center top;
+  }
+
+  #engagements {
+    background: url("http://alison-d-photography.imgix.net/img/featured-engagement1.jpg?auto=compress&w=3000&dpr=2") center top;
+  }
+
+  #alison {
+    background: url("http://alison-d-photography.imgix.net/img/alison-2.JPG?auto=compress&w=3000&dpr=2");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   li h1 {
@@ -479,12 +576,6 @@ form button {
   }
   #portfolio h1 {
     font-size: 1.75em;
-  }
-  #weddings {
-    background: url("/static/img/featured-wedding1.jpg") top center;
-  }
-  #engagements {
-    background: url("/static/img/featured-engagement1.jpg") top center;
   }
 
   nav {
