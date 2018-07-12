@@ -96,7 +96,7 @@ func weddingHandler(w http.ResponseWriter, r *http.Request) {
     "http://alison-d-photography.imgix.net/img/wedding/",
     "Wedding Portfolio",
     "Best Days Ever",
-    "From sharing inside jokes during your bridal portraits with your girls to those glowing 'ahhhhh we're married' faces during your first photos together post-ceremony, my clients love photos that they can remember the laughter and enjoy the real beauty of candid moments."
+    "From sharing inside jokes during your bridal portraits with your girls to those glowing 'ahhhhh we're married' faces during your first photos together post-ceremony, my clients love photos that they can remember the laughter and enjoy the real beauty of candid moments.",
   }
   renderTemplate(w, portfolioTemplate, page)
 }
