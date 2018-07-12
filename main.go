@@ -88,11 +88,15 @@ var portfolioTemplate = template.Must(template.ParseFiles("template/root.html", 
 type PortfolioPage struct {
   Images []string
   Folder string
+  Topic, Title, Body string
 }
 func weddingHandler(w http.ResponseWriter, r *http.Request) {
   page := PortfolioPage{
     weddings(),
     "http://alison-d-photography.imgix.net/img/wedding/",
+    "Wedding Portfolio",
+    "Best Days Ever",
+    "From sharing inside jokes during your bridal portraits with your girls to those glowing 'ahhhhh we're married' faces during your first photos together post-ceremony, my clients love photos that they can remember the laughter and enjoy the real beauty of candid moments."
   }
   renderTemplate(w, portfolioTemplate, page)
 }
@@ -101,6 +105,9 @@ func engagementHandler(w http.ResponseWriter, r *http.Request) {
   page := PortfolioPage{
     engagements(),
     "http://alison-d-photography.imgix.net/img/engagement/",
+    "Engagement Portfolio",
+    "First Date Vibes",
+    "Engagements are full of laughter, playful fun, and a little adventure!",
   }
   renderTemplate(w, portfolioTemplate, page)
 }

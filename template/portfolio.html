@@ -2,9 +2,9 @@
 {{template "nav" .}}
 <div id="portfolio">
   <header>
-    <div class="topic">Engagement Portfolio</div>
-    <h1>First Date Vibes</h1>
-    <p>If you’re fueled by windblown hair and fresh mountain air, then fill out this contact form and I'll send you my cute little guide that contains my availability, pricing, links to more albums, and a little more!</p>
+    <div class="topic">{{.Topic}}</div>
+    <h1>{{.Title}}</h1>
+    <p>{{.Body}}</p>
   </header>
   {{$folder := .Folder}}
   {{range .Images}}
