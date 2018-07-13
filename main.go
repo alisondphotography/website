@@ -35,6 +35,8 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
   renderTemplate(w, aboutTemplate, nil)
 }
 
+var successTemplate = template.Must(template.ParseFiles("template/root.html", "template/success.html"))
+
 var contactTemplate = template.Must(template.ParseFiles("template/root.html", "template/about.html", "template/nav.html", "template/contact.html"))
 func contactHandler(w http.ResponseWriter, r *http.Request) {
   if r.Method == "POST" {
@@ -80,6 +82,9 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
     if err != nil {
       http.Error(w, err.Error(), http.StatusInternalServerError)
     }
+
+    renderTemplate(w, successTemplate, nil)
+    return
   }
   renderTemplate(w, aboutTemplate, nil)
 }

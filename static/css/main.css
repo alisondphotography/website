@@ -387,6 +387,20 @@ form button {
   margin: 1em auto;
 }
 
+#success {
+  text-align: center;
+}
+
+#success a {
+  background: black;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 1em 0;
+  display: block;
+  margin: 0.5em auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
