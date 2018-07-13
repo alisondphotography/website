@@ -53,7 +53,7 @@ $('#more-portfolio').click(function() {
         '<source media="(min-width: 1000px)" srcset="'+folder+weddings[i]+'?auto=compress&w=1000 1x, '+folder+weddings[i]+'?auto=compress&w=1000&dpr=2 2x">' +
         '<source media="(min-width: 768px)" srcset="'+folder+weddings[i]+'?auto=compress&w=768 1x, '+folder+weddings[i]+'?auto=compress&w=768&dpr=2 2x">' +
         '<source media="(min-width: 480px)" srcset="'+folder+weddings[i]+'?auto=compress&w=480 1x, '+folder+weddings[i]+'?auto=compress&w=480&dpr=2 2x">' +
-        '<img src="'+folder+weddings[i]+'" alt="">' +
+        '<img src="'+folder+weddings[i]+'?auto=compress&w=1000&dpr=2" alt="">' +
         '</picture>'
       $('#portfolio-images').append(html);
     }
