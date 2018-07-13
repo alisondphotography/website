@@ -43,7 +43,7 @@ $('#more-portfolio').click(function() {
         '<source media="(min-width: 480px)" srcset="'+folder+weddings[i]+'?auto=compress&w=480 1x, '+folder+weddings[i]+'?auto=compress&w=480&dpr=2 2x">' +
         '<img src="'+folder+weddings[i]+'" alt="">' +
         '</picture>'
-      $('#portfolio-images').append(html);
+      $('#wedding-portfolio-images').append(html);
     }
   }
 
@@ -55,7 +55,7 @@ $('#more-portfolio').click(function() {
         '<source media="(min-width: 480px)" srcset="'+folder+weddings[i]+'?auto=compress&w=480 1x, '+folder+weddings[i]+'?auto=compress&w=480&dpr=2 2x">' +
         '<img src="'+folder+weddings[i]+'?auto=compress&w=1000&dpr=2" alt="">' +
         '</picture>'
-      $('#portfolio-images').append(html);
+      $('#wedding-portfolio-images').append(html);
     }
     $('#more-portfolio').hide()
   }

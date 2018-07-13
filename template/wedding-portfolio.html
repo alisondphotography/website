@@ -7,7 +7,7 @@
     <p>{{.Body}}</p>
   </header>
   {{$folder := .Folder}}
-  <div id="portfolio-images">
+  <div id="wedding-portfolio-images">
   {{range .Images}}
     <picture>
       <source media="(min-width: 1000px)" srcset="{{$folder}}{{.}}?auto=compress&w=1000 1x, {{$folder}}{{.}}?auto=compress&w=1000&dpr=2 2x">
@@ -17,6 +17,8 @@
     </picture>
   {{end}}
   </div>
+
+  <button id="more-portfolio">Load More</button>
 </div>
 
 {{template "contact" .}}

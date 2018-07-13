@@ -90,6 +90,9 @@ type PortfolioPage struct {
   Folder string
   Topic, Title, Body string
 }
+
+var weddingTemplate = template.Must(template.ParseFiles("template/root.html", "template/wedding-portfolio.html", "template/nav.html", "template/contact.html"))
+
 func weddingHandler(w http.ResponseWriter, r *http.Request) {
   page := PortfolioPage{
     weddings(),
@@ -98,7 +101,7 @@ func weddingHandler(w http.ResponseWriter, r *http.Request) {
     "Best Days Ever",
     "From sharing inside jokes during your bridal portraits with your girls to those glowing 'ahhhhh we're married' faces during your first photos together post-ceremony, my clients love photos that they can remember the laughter and enjoy the real beauty of candid moments.",
   }
-  renderTemplate(w, portfolioTemplate, page)
+  renderTemplate(w, weddingTemplate, page)
 }
 
 func engagementHandler(w http.ResponseWriter, r *http.Request) {
