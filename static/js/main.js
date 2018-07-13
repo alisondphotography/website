@@ -57,6 +57,7 @@ $('#more-portfolio').click(function() {
         '</picture>'
       $('#portfolio-images').append(html);
     }
+    $('#more-portfolio').hide()
   }
 
   numWeddings++;
