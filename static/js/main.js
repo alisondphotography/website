@@ -1,4 +1,69 @@
 
+var weddings = [
+  "4-lee-wedding-3.jpg",
+  "4-lee-wedding-12.jpg",
+  "4-lee-wedding-16.jpg",
+  "4-lee-wedding-40.jpg",
+  "4-lee-wedding-42.jpg",
+  "4-lee-wedding-62.jpg",
+  "4-lee-wedding-243.jpg",
+  "4-lee-wedding-253.jpg",
+  "4-lee-wedding-265.jpg",
+  "4-lee-wedding-273.jpg",
+  "5-pedroza-wedding-309.jpg",
+  "5-pedroza-wedding-328.jpg",
+  "6-muzota-wedding-1.jpg",
+  "6-muzota-wedding-2.jpg",
+  "6-muzota-wedding-4.jpg",
+  "7-rogelio-jasmine-wedding-150.jpg",
+  "7-rogelio-jasmine-wedding-153.jpg",
+  "7-rogelio-jasmine-wedding-183.jpg",
+  "8-hayes-wedding-110.jpg",
+  "8-hayes-wedding-279.jpg",
+  "9-diaz-wedding-23.jpg",
+  "9-diaz-wedding-48.jpg",
+  "9-diaz-wedding-51.jpg",
+  "9-diaz-wedding-479.jpg",
+  "9-diaz-wedding-503.jpg",
+  "10-murphy-wedding-297.jpg",
+  "10-murphy-wedding-356.jpg",
+  "5-1-garcia-wedding-295.jpg",
+];
+
+numWeddings = 0
+
+$('#more-portfolio').click(function() {
+  let folder = "http://alison-d-photography.imgix.net/img/wedding/"
+
+  if (numWeddings === 0) {
+    for(var i = 0; i < 14; i++) {
+      let html = '<picture>\n' +
+        '<source media="(min-width: 1000px)" srcset="'+folder+weddings[i]+'?auto=compress&w=1000 1x, '+folder+weddings[i]+'?auto=compress&w=1000&dpr=2 2x">' +
+        '<source media="(min-width: 768px)" srcset="'+folder+weddings[i]+'?auto=compress&w=768 1x, '+folder+weddings[i]+'?auto=compress&w=768&dpr=2 2x">' +
+        '<source media="(min-width: 480px)" srcset="'+folder+weddings[i]+'?auto=compress&w=480 1x, '+folder+weddings[i]+'?auto=compress&w=480&dpr=2 2x">' +
+        '<img src="'+folder+weddings[i]+'" alt="">' +
+        '</picture>'
+      $('#portfolio').append(html);
+    }
+    numWeddings++;
+  }
+
+  if(numWeddings === 1) {
+    for(var i = 0; i < 14; i++) {
+      let html = '<picture>\n' +
+        '<source media="(min-width: 1000px)" srcset="'+folder+weddings[i]+'?auto=compress&w=1000 1x, '+folder+weddings[i]+'?auto=compress&w=1000&dpr=2 2x">' +
+        '<source media="(min-width: 768px)" srcset="'+folder+weddings[i]+'?auto=compress&w=768 1x, '+folder+weddings[i]+'?auto=compress&w=768&dpr=2 2x">' +
+        '<source media="(min-width: 480px)" srcset="'+folder+weddings[i]+'?auto=compress&w=480 1x, '+folder+weddings[i]+'?auto=compress&w=480&dpr=2 2x">' +
+        '<img src="'+folder+weddings[i]+'" alt="">' +
+        '</picture>'
+      $('#portfolio').append(html);
+    }
+  }
+
+
+});
+
+/*
 for(x = 1; x < 8; x++) {
   $('#index').append('<img class="hidden" src="http://alison-d-photography.imgix.net/img/alison-'+x+'.JPG?auto=compress&w=1000&dpr=2">')
 }
@@ -29,6 +94,7 @@ setInterval(function() {
 
 }, 1000)
 
+*/
 
 /*
 i = 0
