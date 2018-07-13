@@ -377,6 +377,17 @@ form button {
   margin: 1em auto;
 }
 
+#more-portfolio {
+  background: black;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  margin: 1em auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
