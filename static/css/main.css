@@ -380,10 +380,9 @@ form button {
 #more-portfolio {
   background: black;
   color: #fff;
-  height: 40px;
   width: 200px;
   text-align: center;
-  line-height: 40px;
+  padding: 0.5em 0;
   display: block;
   margin: 1em auto;
 }
