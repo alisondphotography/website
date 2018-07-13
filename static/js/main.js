@@ -48,7 +48,7 @@ $('#more-portfolio').click(function() {
   }
 
   if(numWeddings === 1) {
-    for(var i = 0; i < 14; i++) {
+    for(var i = 14; i < weddings.length; i++) {
       let html = '<picture>\n' +
         '<source media="(min-width: 1000px)" srcset="'+folder+weddings[i]+'?auto=compress&w=1000 1x, '+folder+weddings[i]+'?auto=compress&w=1000&dpr=2 2x">' +
         '<source media="(min-width: 768px)" srcset="'+folder+weddings[i]+'?auto=compress&w=768 1x, '+folder+weddings[i]+'?auto=compress&w=768&dpr=2 2x">' +
