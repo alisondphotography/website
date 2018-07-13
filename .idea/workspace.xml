@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccc2a565-c750-43c6-9798-0d395a5bfd00" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/template/wedding-portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/root.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/root.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -52,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="root.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="root.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/root.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -107,11 +104,11 @@
         <option value="$PROJECT_DIR$/template/about.html" />
         <option value="$PROJECT_DIR$/images.go" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/template/root.html" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/template/wedding-portfolio.html" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
         <option value="$PROJECT_DIR$/template/portfolio.html" />
+        <option value="$PROJECT_DIR$/template/root.html" />
       </list>
     </option>
   </component>
@@ -494,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/root.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -526,6 +516,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/root.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>
